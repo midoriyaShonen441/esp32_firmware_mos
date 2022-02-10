@@ -18,8 +18,19 @@ sources:
 filesystem:
     - fs
 
-include:
+includes:
     - include
+    - include/WiFi/src
+    - include/HTTPClient/src
+    - include/WiFiClientSecure/src
+    - include/EEPROM/src
+    - include/ArduinoJson/src
+    - include/cores/esp32
+    - include/wifi_provisioning/include
+    - include/protocomm/include/common
+    - include/protocomm/include/security
+#     - add-lib/arduino-esp32/libraries/HTTPClient/src
+#     - add-lib/arduino-esp32/libraries/WiFi/src
 
 libs:
     - origin: https://github.com/mongoose-os-libs/boards
